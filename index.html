@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Awesome Hangman Game</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        
+
+    </head>
+
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Totally Awesome 'Hangman' Game</h1>
+
+                    <p>Guess a popular 90's Alternative rock band</p>
+                    <form id="hangman">
+                        <!-- These are the buttons and the fill form -->
+                        <input type="text" maxlength="1" minlength="1" name="letter" id="letter" placeholder="Guess a letter" />
+                        <input id="guess" name="guess" type="submit" value="Guess" />
+                        <button id="restart" name="restart" type="button">Restart</button>
+                    </form>
+                        <ul id="letters"></ul>
+                        <p id="man"></p>
+                        <p id="output" class="output"></p>
+                </div>
+            
+                        <div class="col-sm-4">
+                        </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1">
+                    <div class="imgHolder">
+                            <!-- Sets default picture and js script will change picture from id.  -->
+                            <a href="#"><img src="assets/images/Hangman-0.png" alt="Hangman" id="hangmanIcons"></a>                         
+                    </div>
+                </div>
+            
+                <div class="col-md-2">
+                        <span><strong>Hangman</strong></span>
+                </div>
+
+                <div class="col-md-9">
+                        
+                </div>
+            </div>      
+        </div>
+
+    </body>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>  
+    <!-- Footer -->
+    <footer class="py-2 bg-dark fixed-bottom">
+            <div class="container">
+            <p class="m-0 text-center text-white">&copy Copyright 2018 Al Oshiro</p>
+            </div>
+    </footer>
+
+
+</html>
